@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PilaBlazor", "PilaBlazor\PilaBlazor.csproj", "{37F43E1B-22A2-4362-8707-547463112028}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37F43E1B-22A2-4362-8707-547463112028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37F43E1B-22A2-4362-8707-547463112028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37F43E1B-22A2-4362-8707-547463112028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37F43E1B-22A2-4362-8707-547463112028}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FB8B2DC-8928-4F5A-9833-84A87076F6AF}
+	EndGlobalSection
+EndGlobal

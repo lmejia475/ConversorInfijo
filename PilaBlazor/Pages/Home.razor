@@ -1,0 +1,74 @@
+﻿@page "/"
+@using PilaBlazor.Services
+
+<PageTitle>Home</PageTitle>
+
+
+<h1>Pila</h1>
+
+<div class="row">
+    <div class="col-6">
+        <input type="number" class="form-control" @bind="valor" />
+    </div>
+    <div class="col-3 form-group">
+        <button class="btn btn-primary" @onclick="Push">Push</button>
+        <button class="btn btn-danger" @onclick="Pop">Pop</button>
+    </div>
+    <div class="col">
+        <table class="table table-bordered table-striped table-hover">
+            <thead class="table-dark text-center">
+                <tr>
+                    <th>PILA</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @for (int i = MyStack.TOPE - 1; i >= 0; i--)
+                {
+                    @if (MyStack.Elementos[i] == 0) continue;
+
+                    <tr>
+                        <td>@MyStack.Elementos[i]</td>
+                    </tr>
+
+                }
+
+@*                 @foreach (var item in MyStack)
+                {
+                    <tr>
+                        <td>@item</td>
+                    </tr>
+                }
+ *@
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+@code {
+
+    public Pila MyStack { get; set; }
+
+    int valor;
+
+    protected override void OnInitialized()
+    {
+        MyStack = new Pila(10);
+        valor = 0;
+    }
+
+    private void Push()
+    {
+        if (valor == 0) return;
+
+        MyStack.Push(valor);
+        valor = 0;
+    }
+
+    private void Pop()
+    {
+        MyStack.Pop();
+    }
+
+}
